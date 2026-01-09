@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Candy ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  height:100vh;
+  font-family:'Poppins',sans-serif;
+  overflow:hidden;
+  color:white;
+}
+
+/* 🌄 Same background */
+.bg{
+  position:fixed;
+  inset:0;
+  background:url('bg.jpg') center/cover no-repeat;
+  animation:fadeBg 8s infinite;
+  z-index:-2;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+  z-index:-1;
+}
+
+@keyframes fadeBg{
+  0%{opacity:0}
+  30%{opacity:1}
+  70%{opacity:1}
+  100%{opacity:0}
+}
+
+/* Card */
+.card{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.message{
+  background:rgba(255,255,255,0.06);
+  padding:40px;
+  border-radius:20px;
+  max-width:420px;
+  text-align:center;
+  animation:fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:48px;
+  color:#ffb6c1;
+}
+
+p{
+  margin-top:15px;
+  line-height:1.6;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<div class="card">
+  <div class="message">
+    <h1>PUFF❤️</h1>
+    <p>
+      Eight days may sound small,<br>
+      but i am counting every second for your day.<br><br>
+      Your presence makes ordinary moments beautiful,<br>
+      and I can’t wait to celebrate<br>
+      the day the world was blessed with you and so i am blessed to have you 💖
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
